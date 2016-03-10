@@ -1,0 +1,56 @@
+body {
+	padding: 1% 26.5%;
+	background-color: #e0eef5;
+	color: #333;
+}
+p, div  {
+	margin: 55px 0;
+	font: 3em sans-serif;
+}
+a {
+	color: royalblue;
+	text-decoration: none;
+	font: 2.25em sans-serif;
+}
+
+
+/* Pseudo-elements */
+/* with before and after pseudo elements we can insert virtual elements (generated content)
+(image, icon, text etc.) before and after an element's content. 
+we can style these virtual elements with css which do not appear in the source code */
+
+.phone::before {
+	content: "\2706";
+} 
+
+.dload::before {
+	margin: 0 8px;
+	content: url(../img/pdf.png); /* we didn't use quotes inserting img */
+}
+
+.dload::after {
+   content: attr(title); /* we are using the title attr value as the content */
+   padding-left: 10px;
+   font-size: .75em;
+   color: tomato;
+}
+
+
+.box {
+	border: 1px solid; 
+	/*generated content is not exactly inserted before or after the actual element */
+	/*it is actually inserted inside the actual element as child content*/
+	padding: 10px;
+}
+
+.box::before,
+.box::after {
+	content: ""; 
+	/*we must at least insert empty quotes to style with before and after pseudo elements*/
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: royalblue;
+	border-radius: 50%;
+	margin: 15px 15px 0 15px;
+}

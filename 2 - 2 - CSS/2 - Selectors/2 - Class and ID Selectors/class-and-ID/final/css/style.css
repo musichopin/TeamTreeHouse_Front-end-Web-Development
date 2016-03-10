@@ -1,0 +1,37 @@
+.container {
+	margin: 0 auto;
+	width: 740px;
+}
+
+.global {
+	padding-top: 50px;
+	color: white;
+	text-align: center;
+	font-size: 24px;
+}
+
+.main-header {
+	height: 110px;
+	background: royalblue;
+	color: white;
+}
+
+/*an id element can only have one ID and a page can only 
+have one element with the same ID name*/
+#main-content {
+	padding: 20px;
+ 	height: 800px; 
+	background: lightgray;
+}
+
+#main-content p {
+	font-size: 21px;
+	line-height: 1.5;
+	margin-top: 32px;
+}
+
+.main-footer {
+	height: 100px;
+	background: #222;
+	color: white;
+}

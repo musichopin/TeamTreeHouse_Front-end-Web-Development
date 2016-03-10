@@ -1,0 +1,58 @@
+a {
+  text-decoration: none;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+a {
+  color: #6ab47b; 
+  /*
+  #redgreenblue
+  her bir renk 2 digite sahiptir
+  her digit 0'dan f'ye kadar 16 farklı değer alabilir
+  digit yukarı doğru çıktıkça o rengin şiddeti artar
+  */
+}
+
+header {
+  background: #6ab47b;
+  border-color: #599a68;
+}
+
+h1, h2 {
+  color: #fff; /* #fff = #ffffff = white */
+  /* daha spesifik olduğundan ancor selector'ü override eder */
+}
+
+nav {
+  background: #599a68;
+  /* daha spesifik olduğundan header selector'ü override eder */
+}
+
+nav a, nav a:visited {
+  color: #fff;
+  /* daha spesifik olduğundan ancor selector'ü override eder */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

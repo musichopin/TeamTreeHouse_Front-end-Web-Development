@@ -1,0 +1,60 @@
+/* Absolute Length Units 
+--------------------------------------------- */
+/*
+cm, mm and in are not common for on-screen display
+and these dimensions are rendered as physical units
+*/
+.cm {
+	width: 21.16cm;
+}
+
+.mm {
+	width: 211.6mm;
+}
+
+.in {
+	width: 8.33in;
+}
+
+	/* 
+	picas and points are intended to be used in print
+	rather than screen design and web dev
+	*/
+
+.pc {
+	width: 50pc;
+	font-size: 2.4pc;
+}
+
+.pt {
+	width: 600pt;
+	font-size: 28.4pt; 
+	/* 
+	div height increases proportionally to font-size 
+	since it was not designated beforehand 
+	*/
+	
+}
+
+.px {
+	width: 800px;
+	font-size: 38px;
+}
+
+/*
+pixel is common measurement unit for layout since 
+it allows positioning elements precisely
+
+Pixels (px) are relative to the viewing device. For low-dpi devices, 
+1px is one device pixel (dot) of the display. 
+For printers and high resolution screens 1px implies multiple device pixels.
+*/
+
+/*
+pixel is the smallest unit a screen can physically display
+*/
+
+/*
+except for the pixel unit, designers tend to avoid absolute length units for on-screen display, 
+because the size of the elements are effected by the size and resolution of the user's monitor
+*/

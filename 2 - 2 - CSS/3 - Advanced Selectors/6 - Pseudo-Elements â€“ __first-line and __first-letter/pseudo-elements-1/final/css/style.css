@@ -1,0 +1,28 @@
+body {
+	margin: 80px auto;
+	width: 70%;
+	color: #222;
+	font: normal 1.1em/1.5 Sans-Serif;
+}
+
+/* Pseudo-elements */
+
+/* 
+pseudo classes target actual elements that describe a certain state
+while pseudo elements let us style certain parts of the documents that don't exist as elements
+*/
+
+.intro::first-line { /* or .intro:first-line */
+	color: royalblue;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.intro::first-letter {
+	float: left;
+	margin: 10px 10px 0 0;
+	padding: 5px 10px;
+	background: #e0e0e0;
+	font-size: 100px;
+	line-height: 1;
+}

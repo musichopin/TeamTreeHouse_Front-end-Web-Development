@@ -1,0 +1,18 @@
+a {
+  text-decoration: none;
+}
+
+#wrapper {
+  max-width: 940px; 
+  /*actual width could be smaller than 940px 
+  depending on the browser size, but it is at most 940px*/
+  /*max-width ayarlamak, yüzde cinsinden numaralandırmaya
+  benzemiş*/
+  margin: 0 auto; /* same as saying 0px or 0% */
+  /* auto centers the div in horizontal axis */
+  padding: 0 5%; 
+  /*%5 padding ile padding, sayfa boyutu ne olursa olsun
+  parrent elementin (body) yüzde beşini alır */
+  background: orange;
+  /*we used background for testing purposes*/
+}

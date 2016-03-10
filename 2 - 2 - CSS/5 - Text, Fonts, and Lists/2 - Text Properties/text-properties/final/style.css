@@ -1,0 +1,36 @@
+
+body {
+	padding: 2em 6em;
+}
+	
+
+/* Text Styles
+--------------------------------------------- */
+
+h1 {
+	font-family: Georgia, Times, serif;
+	font-size: 2.5em;
+	text-transform: capitalize; /*value olarak uppercase ve lowercase'de alabilir*/
+}
+
+p {
+	font: 1.5em/1.5 Baskerville, "Times New Roman", Times, serif;
+	text-indent: 1.5em; /*equals to 24px.*/
+	white-space: nowrap; 
+	/* default value is normal, which ignores line-breaks, spaces and indentation from markup.*/
+	/* pre value renders all spaces, line-breaks and text-indentation from the markup*/
+	/* pre-line value ignores multiple spaces in markup but line-breaks */
+	/* nowrap: on a single line */
+	
+	/* text-decoration value olarak none, underline, overline veya line-through alabilir */
+	text-align: justify; /*left is default*/
+	/* line-height: 1.5 = 1.5em = 150% */
+}	
+
+a:hover {
+	text-decoration: none;
+}
+
+a {
+	margin-top: 120px;
+}

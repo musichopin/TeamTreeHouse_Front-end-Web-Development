@@ -1,0 +1,69 @@
+
+body {
+	padding: 1em 6em;
+	font: 1.2em/1.5 sans-serif;
+	background-color: #dfdfdf;
+}	
+	
+p {
+	width: 17.5em;
+	padding: 1em;
+	background: #FFF;
+	border: 1px solid #cbcbcb;
+}
+
+/* Text Styles
+------------------------------------------------------- */
+
+
+h1 {
+	color: #2d2d2d;
+	font-size: 3.1em;
+	text-shadow: 0 -1px #767676, 0 -2px #262626, 0 0 8px rgb(62, 106, 168); 
+	/* multiple shadow values applied to the same text */
+	/* the one on the top will be closest to the text */
+	
+	/*1st text-shadow value: horizontal offset or how far to the right (positive) or left the shadow should fall*/
+	/*2nd value: vertical offset or how far to the top (positive) or bottom the shadow should fall*/
+	/*3rd value: optional and indicates blur radius applied to the drop shadow*/
+	/*4th value: color*/
+}	
+
+
+.text-overflow {
+   white-space: nowrap;
+   overflow: hidden; /* specifies what should happen when a text overflows its containing element */   
+   text-overflow: ellipsis; /*işe yaraması için overflow property visible olmamalı (scroll veya hidden olabilir)*/
+   /*default value is clip*/
+}
+
+
+.word-wrap {
+	word-wrap: break-word; /*gives us a simple way of wrapping text within a single word*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+
+/* List Styles
+--------------------------------------------- */
+
+ul, ol {
+	list-style-position: inside;
+	/*list style position lets us set whether 
+	the list marker appears inside or outside a list item*/
+	
+	/*ie makes default list indentation using left margin, whereas firefox and chrome 
+	makes using left padding*/
+}	
+
+ul {
+	list-style-type: none;
+	
+	/*
+	list-style-image: url('marker.png');
+	// edit etmek bakımından imageı backgrounda yerleştirmek tercih edildi
+	*/
+}
+
+ul li {
+	background: url('marker.png') no-repeat 0 2px; 
+	/* positioning the image 0px from the left and 2px from the top */
+	padding-left: 35px; 
+	/* adds padding to the text */
+}
+
+ol {
+	/*list-style has list-style-type, list-style-position or list-style-image in any order 
+	accepting any of these kws same time*/
+	list-style: decimal-leading-zero outside;
+	/*list style is the short hand property that defines all the list properties 
+	in one declaration*/
+}
+
+li { /*ul li, ol li*/
+	margin-bottom: 1.2em; 
+}

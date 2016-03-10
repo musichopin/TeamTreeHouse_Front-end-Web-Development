@@ -1,0 +1,65 @@
+
+/* Numeric and Textual Values
+--------------------------------------------- */
+
+body {
+	font: normal 1.2em/1.5 sans-serif;  /* 19px */
+	padding: 2em 0; /* actual padding: 2 x 1.2 x 16 = 38.4px */ 
+}
+
+div {
+	max-width: 800px; 
+	padding: 2em; /* actual padding: 2 x 1.2 x 16 = 38.4px */ 
+	margin: auto; /* calculates the margin and sets the left and right margin equal */ 
+	background-image: url('bg.jpg'); /* might take single or double quote */
+}
+
+/* auto is set as initial value for width, height etc. */
+
+p {
+	color: red;
+	width: 50%; /*percentage sign is computed relative to parent element*/
+	/* width, margin, padding and font-size commonly uses percentages */
+	font-size: 75%;
+	/* font-size in percentage value is related to the percentage of its parent element's font-size */
+	
+	/* integer contains digits from 0 to 9, whereas numbers are either integers or decimals */
+	/* integers, background-position, text-indent and position properties may take negative values */
+}
+
+/*a {
+	color: inherit; 
+	// inherit can be used on any element to explicitly specify that 
+	// value of the property should be same as its parent element
+	// be cautious with links
+}*/
+
+strong {
+	color: initial; 
+}
+
+div:after {
+	content: "4\\30 \"asdfasdfasdf\" asdfasd";
+	font-size: 1.5em;
+	color:blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,143 @@
+
+/* Page Styles
+--------------------------------------------- */
+
+body {
+	font-size: 1.2em;
+	font-family: 'Open Sans', sans-serif;
+	width: 80%;
+	margin: 0 auto;
+}
+
+div {
+	height: 25em;
+	margin-top: 2em;
+	position: relative;
+}
+
+div::after {
+	content: "I'm behind the div!";
+	font-size: 2em; /*2 x 1.2 x 16 = 38.4 px*/
+	position: absolute;
+	top: 42%;
+	left: 25%;
+	z-index: -1;
+}
+
+
+/* Color Values
+--------------------------------------------- */
+
+div {
+
+/*	
+	-- Predefined Keyword Examples -- 
+
+	background-color: red;
+	background-color: green;
+	background-color: blue;
+	background-color: lightblue;
+	background-color: darkblue;
+	background-color: tomato;
+	background-color: sandybrown;
+*/
+
+/*	
+	-- Hexadecimal Examples -- 
+	
+	background-color: #RedRedGreenGreenBlueBlue
+	
+	every digit might have numbers 0 to 9, and letters a to f 
+
+	background-color: #FF0033;
+	=
+	background-color: #F03;
+
+*/
+
+/*	
+	-- RGB Example -- 
+	
+	0 is minimum and 255 is maximum
+
+	background-color: rgb(65,105,255);
+
+*/
+
+/*	
+	-- RGBa Example -- 
+	
+	0 is minimum and 255 is maximum
+	
+	a (alpha) controls opacity, 0 being full transparent, and 1 being opaque
+
+	background-color: rgba(65,105,255, .9);
+
+*/
+
+/*  
+
+	-- HSL Example --  
+	
+	hue (0,360) saturation lightness
+	
+	background-color: hsl(130, 50%, 50%); 
+	
+*/
+
+	
+
+/*  
+
+	-- HSLa Example --  
+	
+	hue (0,360) saturation lightness
+	
+*/
+
+	background-color: hsla(130, 50%, 50%, .7); 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

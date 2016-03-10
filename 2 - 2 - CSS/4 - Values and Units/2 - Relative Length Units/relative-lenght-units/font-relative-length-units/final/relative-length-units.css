@@ -1,0 +1,39 @@
+
+/* Relative Length Units 
+--------------------------------------------- */
+/* relative length units specify length that is relative to another length
+like an element's font size or the width of the viewport */
+
+html {
+	font-size: 1em; 
+	/* if we do not specify the font-size of em, its default value is 16 px */
+	
+	/* em is relative to the font-size of the element 
+	(2em means 2 times the size of the current font) 
+	em adapts to the font user chooses */ 
+	
+	/* there is also another rarely used length unit named "ex",
+	which is relative to the x-height of the current font (rarely used) .
+	ex units do not resize with window but they are measured in relation to 
+	another value */ 
+}
+
+.box {
+	width: 30em; /* actual width = 30em x 2em x 16px x 1em = 960px - scales in relation to font-size of the parrent element */
+	font-size: 2em; 
+	/* font size scales relative to the font size of of the page */
+}
+
+p {
+	font-size: 1.2rem; /* 16 x 1,2 x 1 = 19,2px */
+	/*rem unit is used against compounding font sizes.
+	  rem is relative to font-size of the root element
+	*/
+}
+
+
+
+
+
+
+

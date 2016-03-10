@@ -1,0 +1,29 @@
+
+body {
+	padding: 2em 6em;
+}
+	
+/* Font Styles
+--------------------------------------------- */
+
+h1 {
+ 	font-family: Georgia, Times, serif;
+	/* font-family specific (times new roman, arial, courier etc) 
+	veya generic (serif, sans-serif, monospace) olabilir */
+ 	font-weight: normal;
+	/* 
+	font weight values ranges form 100 to 900, normal being 400 and bold being 700
+	*/
+ 	font-size: 250%; /*equals to 2.5 x 16px = 40px = 2.5em*/
+}
+
+p {
+	font: italic small-caps bold 1.5em Baskerville, "Times New Roman", Times, serif;
+	/*font-size and font-family must be specified otherwise entire line is ignored
+	order of font-size and font-family matters
+	any optional value that is omitted will set to its default value not inherited value*/
+	/* we need quotes for more than one word */
+	
+	/* font-style: italic;
+	font-variant: small-caps; */
+}	

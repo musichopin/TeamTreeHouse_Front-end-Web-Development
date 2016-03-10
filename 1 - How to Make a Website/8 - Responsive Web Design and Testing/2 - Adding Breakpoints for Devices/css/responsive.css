@@ -1,0 +1,15 @@
+@media screen and (min-width: 480px) {
+	  /*media queries use a special css syntax called css rules*/
+	  /*we are targeting digital screens as opposed to print media*/
+  body {
+    background: navy;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  body {
+    background: darkgreen;
+  }  
+}
+	/*sequence of media queries matters and it's relevant to cascading 
+	nature of css*/

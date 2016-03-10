@@ -1,0 +1,46 @@
+body {
+	padding: 0 22%;
+	background-color: #e0eef5;
+	color: #222;
+	font: 1.1em/1.5 sans-serif;
+}
+ul  {
+	padding: 0;
+	list-style-type: none;
+	line-height: 2.5;
+}
+img {
+	margin-right: 20px;
+}
+
+/* Substring Matching Attribute Selectors */
+/* we are not only limited to the full value of the attribute with substring matching attribute */
+
+a[href^="http://"] { /* ^ : begins with */
+	color: seagreen;
+}
+
+a[href^="mailto:"] {
+   color: #FFF;
+   background-color: tomato;
+   padding: 4px 8px;
+   text-decoration: none;
+}
+
+a[href$=".pdf"] { /* $ : ends with */
+	background: url('../images/pdf.png') no-repeat 0 2px; /* background resmin soldan ve tepeden ötelenmesini sağlıyor */
+	padding-left: 25px; /* yazının ötelenmesini sağlıyor */
+}
+
+a[href$=".doc"] {
+	background: url('../images/doc.png') no-repeat 0 2px;
+	padding-left: 25px;
+}
+
+img[src*="thumb"] { /* * : contains */
+	border: 5px solid;
+}
+
+/*img[src*="sky"] {
+	border: 5px solid;
+}*/
