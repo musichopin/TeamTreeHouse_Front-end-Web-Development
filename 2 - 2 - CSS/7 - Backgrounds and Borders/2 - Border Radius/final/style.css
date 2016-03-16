@@ -1,0 +1,91 @@
+
+ /* Individual Values */
+
+.rounded-box {
+	width: 600px;
+   	height: 400px;
+   	background-color: #568E9D;
+	
+	/* The border-radius property is the shorthand property 
+	for border-top-left-radius, border-top-right-radius, 
+	border-bottom-right-radius, and border-bottom-left-radius (in a row.) */
+	
+	/* The border-radius values can be any length unit 
+	or a percentage. When using percentages, the horizontal 
+	percentage value will refer to the width of the box, 
+	and the vertical percentage value will refer to the height of the box. 
+	Values cannot be negative. */
+	
+	/* The rounded corners are formed from the radius of a 
+	quarter circle. */
+	
+	/* Even if the element does not have a border applied, 
+	the radius we define still gets applied if the element has
+	a background property set, and vice versa. */
+
+ 	border-top-left-radius: 30px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 10px;
+}
+
+/* Adding a Second Value --------------- */
+
+	/* When 2 values are used, the first value is the horizontal 
+	radius, and the second is the vertical radius. yatay value 
+	köşeden başlayarak radius ayarlar */
+
+/*.rounded-box {
+	width: 600px;
+   	height: 400px;
+   	background-color: #568E9D;
+
+   	border-top-left-radius: 80px 40px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 80px 40px;
+	border-bottom-left-radius: 10px; 
+} */
+
+/* Shorthand --------------------------- */
+/*
+.rounded-box {
+	width: 600px;
+	height: 400px;
+	background-color: #568E9D;
+	border-radius: 50px / 100px;
+	// horizontal / vertical
+} */
+
+/*
+.rounded-box {
+	width: 600px;
+	height: 400px;
+	background-color: #568E9D;
+	border-radius: 50px 40px 30px 20px / 100px 80px 60px 40px;
+	// horizontals / verticals
+} */
+
+/* Circle Shape ------------------------- */
+
+/* .rounded-box {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%; 
+ } */
+
+/* Oval Shape --------------------------- */
+
+/* .rounded-box {
+   width: 200px; 
+   height: 100px; 
+   border-radius: 100px / 50px;
+} */
+
+/* Lemon Shape -------------------------- */
+
+/*.rounded-box {
+   width: 200px; 
+   height: 200px;
+   border-radius: 10px 150px 30px 150px;
+   background: #F5F240;
+} */

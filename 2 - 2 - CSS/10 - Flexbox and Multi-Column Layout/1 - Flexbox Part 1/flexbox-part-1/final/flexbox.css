@@ -1,0 +1,16 @@
+
+.nav {
+	/* the flex value makes the nav the flex container box.
+	So the content, or "children," of nav (flex items) 
+	instantly become flex items. */
+	display: flex;
+	flex-direction: row; /* row, row-reverse, column, column-reverse */
+	justify-content: space-between; /* space-between, flex-end, center */
+	flex-wrap: wrap;
+	/* creates a multi-line container which wraps the flex items */
+}
+
+/*.nav li:first-child {
+	margin-right: auto;
+	// first list item is pushed to the far left side
+}*/

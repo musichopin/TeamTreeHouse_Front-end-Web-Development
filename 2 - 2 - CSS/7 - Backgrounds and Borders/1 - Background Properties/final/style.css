@@ -1,0 +1,36 @@
+
+.box {
+	/* background color value predefined, hex, RGBA, RGB, HSL, HSLA olabilir */
+	/* background image gösterilemezse background-color devreye girer.
+	bg image gösterildiği halde bg color da gösterilebilir.
+	kontrast dikkate alınarak bg image ve bg color atanmalıdır. */
+	/* bg image, container'dan küçük ise yatay ve dikey yönde tekrarlanır*/
+	/* By default, a background image's initial position is the top left-hand corner. 
+	background-position accepts position keywords along with length units and percentages. 
+	The first value in background position determines the position in the x axis
+	or horizontal position. */
+	
+	
+/*	background-color: #E4E4E4;
+	background-image: url('img/mike.png');
+	background-repeat: no-repeat; // repeat-x and repeat-y
+	background-attachment: scroll;
+	background-position: center center;*/
+
+	/* Shorthand Property */
+
+	background: #E4E4E4 url('img/mike.png') no-repeat scroll center;
+	/* it doesn't matter if one or several values left out */
+}
+
+.scroll {
+	background-attachment: scroll; /* default value */
+}
+
+.fixed {
+	background-attachment: fixed;
+}
+
+.local {
+	background-attachment: local;
+}

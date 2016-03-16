@@ -1,0 +1,46 @@
+
+/* Example 1 - index.html */
+
+div {
+	margin: 50px auto;
+	font: 1.1em/1.5 sans-serif;
+	box-sizing: border-box;
+}
+
+.sketch-img {
+	width: 700px;
+	height: 500px;
+	border-radius: 10px;
+
+	/* the first image listed will be the top image layer rendered */
+	background: url('img/smiley.png') no-repeat 350px 200px, url('img/pencil.png') no-repeat 50px 50px, url('img/texture.jpg') #d6bb80;
+	background-size: 250px 200px, 50% 45%, 110%;
+	/* if no height value is given height will be default for the images */
+	/* When we use percentages in our values, the percentage values are relative 
+	to the width and height of the entire background positioning area, not the width 
+	and height of the background image itself. */
+
+}
+
+/* Example 2 - full-page-bg.html */
+
+/*html {
+  height: 100%;  
+  background: url('img/full-bg.jpg') no-repeat center;
+  background-size: cover;
+}*/
+
+.box {
+	width: 80%;
+	height: 500px;
+	padding: 30px;
+  	background: url('img/full-bg.jpg') no-repeat center;
+	background-size: cover; /* cover or contain */
+	background-clip: padding-box; /* padding-box, content-box or border-box */
+	/* bg-clip tells the browser how far the bg should visibly extend */
+	
+	/* background-origin: content-box;
+	bg-origin is alternative to bg-clip */
+	
+	border: 15px solid rgba(35,66,97,.6);
+}

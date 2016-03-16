@@ -1,0 +1,45 @@
+
+.nav, .main {
+	display: flex; /* we are making these boxes flex container */
+}
+
+.nav {
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.nav li {
+	flex-grow: 1; /* same as flex property */
+	/* flex-grow specifies the ratio of free space that should 
+	be taken by the list items (flex items) */
+}
+
+.col {
+	flex: 1;
+}
+
+.col-c {
+	flex: 2;
+	order: -1; /* moves the column relative to other elements' order values (0: default) */
+}
+
+.col-a {
+	order: -2;
+}
+
+.col-b {
+	align-self: center; /* flex-start, flex-end, stretch or center */
+}
+
+@media screen and (max-width: 999px) { /* changes take affect whenever the viewport is below 1000px */
+	.main { /* we are adjusting the layout of flex-items with media queries at a breakpoint of 999px */
+		flex-direction: column;
+	}
+}
+
+
+
+
+
+

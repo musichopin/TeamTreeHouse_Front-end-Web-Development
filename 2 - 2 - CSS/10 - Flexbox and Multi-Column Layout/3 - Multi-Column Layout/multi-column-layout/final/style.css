@@ -1,0 +1,19 @@
+/* multi-column layout is primarily used for text layout or creating multiple text columns unlike flexbox layout */
+.main {
+	-moz-column-gap: 3em;
+	-moz-column-rule: 2px dotted #070641;
+	/* column-rule; column-rule-width, column-rule-style, column-rule-color'dan oluşur. */
+	-moz-columns: 250px 3;
+	/* columns; column-width ve column-count'tan oluşur */
+	/* column-width, column için uyarlanmış max-width'e benzer */
+}
+img {
+	display: block;
+	margin: 1.5em 0;
+	max-width: 100%;
+	/* resmi, column width'e göre 100% sığdırır */
+}
+h1 {
+	column-span: all; /* firefox doesn't support */
+	text-align: center;
+}

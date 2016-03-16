@@ -1,0 +1,48 @@
+
+/*	Page Styles
+------------------------------------- */
+
+body {
+	font: 1.1em/1.3 sans-serif;
+	margin: 0;
+	padding: 0 10%;
+}
+
+nav {
+	margin: 1.5em 0;
+	/* visibility: hidden ile display: none arasındaki fark none value'da 
+	sonradan gelen elementlerin none elementin yerini almasıdır */
+	/* visibility: visible is the default value */
+}
+
+a {
+   	width: 100px; 
+	/*width and height can takes units such as em, % and px*/
+	/* width: 20em; denseydi 20em x 1em x 1,1em x 16px = 352px olacaktı */
+  	margin: 15px 0;
+  	display: inline-block; 
+	/*negative top and bottom margins cannot be applied to inline-block elements*/
+	/*display property can take values of inline, block, inline-block and none*/
+}
+
+div {
+	padding: 10px 50px;
+	background-color: #EEE;
+	border: 10px solid #DDD;
+	/* max-width is used to make sure lines of text do not appear too wide 
+	and min-width to make sure too narrow*/
+	/* text-box için dimension explicit olarak belirtilmemişse min-width ve max-width  
+	parent elemente göre, max-height ve min-height contente göre ayarlama yapıyor */
+	width: 50%;
+	/* height property'nin yüzde cinsinden kullanılabilmesi için 
+	ancestorlarının da height ı belirtilmeli */
+	max-height: 200px;
+	/* min-height: 200px; denseydi content kadar height olacaktı */
+	box-sizing: border-box;
+	/* border-box value forces padding and borders into the width and 
+	height instead of expanding it. */
+	overflow: auto;
+	/* overflow property scroll, auto, visible ve hidden value alabilir.
+	auto'nun scroll'a göre farkı text-box'da gereken axis'de scroll bar koymasıdır */	
+}
+

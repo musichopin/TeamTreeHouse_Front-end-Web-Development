@@ -1,0 +1,30 @@
+
+body {
+	background: #3a3a3a;
+}
+
+.box {
+	margin: 3em auto;
+	width: 700px;
+	height: 500px;
+	border-radius: 8px;
+	background: url('img/bg.png');
+	
+	/*  box-shadow: -20px 20px 30px 20px;
+	properties: horizontal offset (negative or positive) | vertical offset (neg or pos)  
+	| optional blur radius (adds depth) | optional spread radius (useful) 
+	| optional color of the box shadow */
+	
+	/*box-shadow: 20px 20px 30px -10px;*/
+	/*box-shadow: inset 10px 10px 5px rgba(0, 0, 0, .8);
+	inset property value creates inner shadow */
+	
+	/*box-shadow: inset 0 0 6px 12px;*/
+	/* shadowun her bir kenarda eşit dağılması için */
+	
+	/* to apply multiple box shadows to an element we use commas. 
+	first value specified appears on top and last one appears on bottom */
+	box-shadow: 2px 2px 15px 5px blue, -2px -2px 15px 5px red, 0 20px 25px -8px #000;
+	/* if box shadow color is not specified color is rendered according 
+	to element's color property */
+}
