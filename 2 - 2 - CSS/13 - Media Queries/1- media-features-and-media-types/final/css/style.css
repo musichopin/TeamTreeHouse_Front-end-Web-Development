@@ -1,0 +1,58 @@
+
+/* @import method */
+/*
+@import url("wider.css") screen and (max-width: 768px) and (min-width: 481px);
+@import url("narrow.css") screen and (max-width: 480px);
+
+importing is slower compared to including media queries in one css file
+because each one is a separate server request
+*/
+
+body {
+	font: 1.1em/1.5 sans-serif;
+}
+.wrap {
+	width: 85%;
+	margin: auto;
+}
+h1 {
+	font-size: 3em;
+}
+p {
+	margin-bottom: 1.5em;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+	/* 
+	   @media specifies the media type we want to target. 
+	   we use the screen media type for the browser.
+	   and kw is a logical operator used to combine screen media 
+	   type with the media feature(s) in the parenthesis.
+	   do not add semi colon inside the media feature.
+	   min-width yazılmamış olsa, browser size 480 px'in 
+	   altına da inse color beyaz olacaktı. 
+	*/
+	body {
+		background: #FF6347;
+		color: #FFF;
+	}
+}
+ @media screen and (max-width: 480px) { 
+ 	/* for anything equal to or less than 480px apply the style below */
+ 	body {
+ 		background: #4682B4;
+ 	}
+ }
+ @media screen and (min-width: 1000px) {
+ 	/* when the viewport is => 1000px the width of the wrap div gets fixed for readability */
+ 	.wrap {
+ 		width: 700px;
+ 	}
+ }
+
+
+
